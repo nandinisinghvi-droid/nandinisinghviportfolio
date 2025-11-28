@@ -1,0 +1,439 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-item:hover{
+  transform: translateY(-3px);
+}
+    .hero-bg{
+      background-image: url("images/background.png"); 
+      background-size: cover;
+      background-position: center;
+      min-height: 90vh; 
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-inner{ position: relative; z-index: 1; width:100%; max-width:1100px;
+     }
+
+    .portfolio-png {
+      width: 80%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      filter: drop-shadow(0 10px 30px rgba(0,0,0,0.6));
+    }
+
+.intro-right {
+  background-image: url("images/background.png"); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 76vh;
+}
+
+.seework-section {
+  background-image: url("images/seework.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 48px 0;
+}
+
+.seework-inner { position: relative; z-index: 2; }
+.see-heading { font-size: 96px; line-height: .9; font-weight:700; }
+
+.portfolio-grid .tile {
+  background: #0fbfb0; 
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;              
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.portfolio-grid .tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-frame {
+  border: 3px solid rgba(4,210,180,0.12);
+  padding: 8px;
+  display:inline-block;
+}
+
+.btn-pill {
+  border-radius: 40px;
+  padding: 14px 34px;
+  font-weight:700;
+  letter-spacing: 1px;
+  transform: translateY(-3px);
+}
+
+.left-toolbar { position: absolute; left: 18px; top: 40%; transform: translateY(-40%); z-index:3; }
+.right-decor { position: absolute; right: 14px; top: 18%; z-index:3; }
+
+.contact-section {
+  position: relative;
+  background-image: url("images/hellobg.png"); 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+
+.contact-inner { position: relative; z-index: 2; }
+
+
+.contact-avatar {
+  max-width: 100%;
+  width: 100%;     
+  height: auto;
+  display: block;
+  margin-left: 0;    
+}
+
+.contact-title { font-size: 64px; line-height: .95; font-weight:700; }
+.contact-sub { font-size: 36px; margin-bottom: 20px; }
+
+.btn-contact {
+  border-radius: 40px;
+  padding: 14px 36px;
+  font-weight:700;
+  background: #0c8c7c;
+  color: #fff;
+  border: none;
+  transform: translateY(-3px);
+}
+
+  .about-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/aboutbg1.png") ;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 0;
+  }
+
+  .about-inner { position: relative; z-index: 2; }
+
+  .about-banner{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 18px;
+  }
+
+  .about-tiles .tile {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #0fe0c9;
+    border: 6px solid rgba(12,140,124,0.8);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  }
+  .about-tiles .tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:block;
+  }
+
+  .skills-dark {
+    position: relative;
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 48px 0;
+    overflow: hidden;
+  }
+  .skills-dark::before {
+    content: "";
+    position:absolute; inset:0;
+    background: rgba(0,0,0,0.35); 
+    z-index:0;
+  }
+  .skills-dark .inner { position:relative; z-index:2; }
+
+  .skills-divider {
+    width:3px;
+    background: rgba(255,255,255,0.12);
+    height: 70%;
+    margin: 0 auto;
+  }
+
+  .skills-list { font-size:20px; line-height:1.7; }
+  .skills-list li { margin-bottom:8px; }
+
+  .skills-teal {
+    position: relative;
+    background: #086152;
+    padding: 48px 0;
+    overflow: hidden;
+  }
+
+  .skills-teal .inner { position:relative; z-index:2; }
+
+  
+  .logos-frame img { width:100%; height:100%; display:block; object-fit:contain; }
+
+  .skills-decor-left, .skills-decor-right {
+    position: absolute; top: 18%; z-index:3; pointer-events:none;
+  }
+  .skills-decor-left { left: 8px; }
+  .skills-decor-right { right: 12px; }
+
+#profile-last .profile-bg{
+  background-image: url("images/aboutbg3.png");
+  min-height: 100vh;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#profile-last .box-box{
+  border: 3px solid rgba(13,180,160,0.85); 
+  padding: 22px;
+  width: 100%;
+  max-width: 520px;  
+  background: rgba(0,0,0,0.18); 
+  box-sizing: border-box;
+}
+
+#profile-last .box-num{
+  color: #19cdb3;
+  font-weight:700;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+#profile-last .box-text{
+  font-size: 18px;
+  line-height: 1.45;
+  margin: 0;
+  color: #ffffff;
+}
+
+#profile-last .about-avatar-wrapper{
+  height: 620px;            
+  padding-bottom: -10px;
+}
+
+#profile-last .about-avatar{
+  max-width: 620px;       
+  height: auto;
+  display: block;    
+}
+
+.portfolio-banner {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 18px;
+}
+
+.project-section .project-bg1 {
+  background-image: url("images/pfbg2.png");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+.project-section {
+  position: relative;
+  z-index: 1;
+}
+
+.project-section .project-bg1,
+.project-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+#instaCarousel {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+#project-2 .swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+#project-2 .project-bg2 {
+  background-image: url(images/pfbg2.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+
+#project-2 .container {
+  position: relative;
+  z-index: 3;
+}
+
+#pfwork .pfwork{
+  margin-left: 40px;
+}
+
+#project-3 .swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+
+#project-3 .project-bg3 {
+  background-image: url(images/pfbg2.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+
+#project-3 .container {
+  position: relative;
+  z-index: 3;
+}
+
+#project-4 .swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+
+#project-4 .project-bg4 {
+ background-image: url(images/pfbg2.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+
+#project-4 .container {
+  position: relative;
+  z-index: 3;
+}
+
+#project-5 .swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+
+#project-5 .project-bg5 {
+  background-image: url(images/pfbg2.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+
+#project-5 .container {
+  position: relative;
+  z-index: 3;
+}
+
+.pfwork{
+  margin-left: 40px;
+}
+
+.contact-banner {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 18px;
+}
+
+.contact-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.contact-bg {
+  background-image: url(images/contactbg.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-avatar {
+  height: auto;
+  object-fit: contain;
+}
+
+.vertical-divider {
+  width: 4px;
+  height: 220px;   
+  background: rgba(255,255,255); 
+  margin-top: 16px;
+}
+
+.contact-list i {
+  color: #ffffff;
+  width: 36px;
+  text-align: center;
+}
+
+.contact-list a,
+a#clink {
+  position: relative;
+  display: inline-block;            
+  color: inherit;                 
+  text-decoration: none;           
+  transition: transform 180ms ease, color 180ms ease;
+  will-change: transform, color;
+  cursor: pointer;
+  outline: none;
+}
+
+.contact-list a:hover,
+a#clink:hover,
+a#clink:focus {
+  transform: translateY(-3px);
+  color: #0c8c7c;
+  text-decoration: none;
+}
+
+
+
